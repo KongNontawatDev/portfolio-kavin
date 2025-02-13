@@ -19,6 +19,7 @@ export default function TranscriptImageButton() {
 
       <Image
         width={200} // ปรับขนาดภาพให้เล็กเพื่อซ่อน
+        height={200}
         style={{ display: "none" }}
         src={imageSrc}
         preview={{

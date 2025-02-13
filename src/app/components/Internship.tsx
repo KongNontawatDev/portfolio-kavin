@@ -105,8 +105,10 @@ export default function Internship() {
 				<div className="flex items-center justify-center w-full h-96 lg:w-1/2">
 					<Image
 						className="object-cover object-top w-full h-full max-w-2xl rounded-md"
-						src="/intern.svg"
+						src="/intern.png"
 						alt="glasses photo"
+						width={700}
+						height={400}
 					/>
 				</div>
 			</div>

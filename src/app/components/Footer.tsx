@@ -14,6 +14,8 @@ export default function Footer() {
 								src="/logo_sub.webp"
 								alt=""
 								style={{ filter: "invert(1)" }}
+								width={100}
+								height={64}
 							/>
 						</a>
 

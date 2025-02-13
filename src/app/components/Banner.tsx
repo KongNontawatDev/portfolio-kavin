@@ -39,11 +39,15 @@ export default function Banner() {
 								className="w-full h-full lg:max-w-2xl z-10"
 								src="/banner-thumb-01.png"
 								alt="my avatar thumb"
+								width={1920}
+								height={1080}
 							/>
 							<Image
 								className="w-full  lg:max-w-md lg:max-h-md absolute z-0 top-28 lg:top-48"
 								src="/square-shape-02.png"
 								alt="shap bg"
+								width={400}
+								height={400}
 							/>
 						</div>
 					</div>

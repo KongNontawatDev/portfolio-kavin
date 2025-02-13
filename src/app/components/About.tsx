@@ -12,6 +12,8 @@ export default function About() {
 							className="object-cover object-top w-full h-full max-w-2xl rounded-md overflow-hidden"
 							src="/e25dba74-4af8-4e81-a9f0-848f63aea7b1.jpg"
 							alt="about me photo"
+							width={500}
+							height={500}
 						/>
 					</div>
 					<div className="order-1 lg:order-2 w-full lg:w-1/2 mb-10 lg:mb-0">
