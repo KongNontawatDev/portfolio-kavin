@@ -1,0 +1,27 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+	themes: light --default;
+}
+
+@plugin "daisyui/theme" {
+  name: "light";
+  default: true;
+  --color-primary: #06213a;
+  --color-primary-content: #fff;
+  --color-secondary: #cea96a;
+}
+
+html,body {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.btn {
+  @apply font-normal;
+}
+
+.text-stroke-1 {
+    -webkit-text-stroke: 1px #06213a;
+}
+
+
