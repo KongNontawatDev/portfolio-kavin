@@ -56,7 +56,7 @@ export default function Navbar() {
 									<Link href={"#intership"}>Internship</Link>
 								</li>
 								<li>
-									<Link href={"#volunteen"}>Volunteen</Link>
+									<Link href={"#volunteen"}>Volunteer</Link>
 								</li>
 							</ul>
 						</div>
@@ -97,7 +97,7 @@ export default function Navbar() {
 								<Link href={"#intership"}>Internship</Link>
 							</li>
 							<li>
-								<Link href={"#volunteen"}>Volunteen</Link>
+								<Link href={"#volunteen"}>Volunteer</Link>
 							</li>
 						</ul>
 					</div>

@@ -1,11 +1,11 @@
 import About from "./components/About";
 import Banner from "./components/Banner";
-import Education from "./components/Education";
+import EntrepreneurJourney from "./components/EntrepreneurJourney";
 import Footer from "./components/Footer";
 import Internship from "./components/Internship";
+import Marquee from "./components/Marquee";
 import MyJourney from "./components/MyJourney";
 import Skill from "./components/Skill";
-import Transcript from "./components/Transcript";
 import Volunteer from "./components/Volunteer";
 
 export default function Home() {
@@ -14,10 +14,12 @@ export default function Home() {
 		<div className="bg-white">
 			<Banner/>
 			<About/>
-			<Education/>
-			<Transcript/>
-			<Skill/>
+			<EntrepreneurJourney/>
+			{/* <Education/> */}
+			{/* <Transcript/> */}
 			<MyJourney/>
+			<Skill/>
+			<Marquee/>
 			<Internship/>
 			<Volunteer/>
 			<Footer/>

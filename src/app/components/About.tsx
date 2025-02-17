@@ -5,9 +5,9 @@ import React from "react";
 export default function About() {
 	return (
 		<>
-			<section className="bg-[#F5F3EF] pt-10 pb-5 lg:pt-40 lg:pb-30" id="about">
+			<section className="bg-[#F5F3EF] pt-10 pb-5 lg:py-15" id="about">
 				<div className="container flex flex-col px-6 py-10 mx-auto space-y-6 lg:h-[32rem] lg:py-16 lg:flex-row lg:items-center">
-					<div className="order-2 lg:order-1 flex items-center justify-center w-full h-[40rem] lg:w-1/2">
+					<div className="order-2 lg:order-1 flex items-center justify-center w-full h-[30rem] lg:w-1/2">
 						<Image
 							className="object-cover object-top w-full h-full max-w-2xl rounded-md overflow-hidden"
 							src="/e25dba74-4af8-4e81-a9f0-848f63aea7b1.jpg"
@@ -37,27 +37,6 @@ export default function About() {
 													<li><b>Age : </b>21 </li>
 													<li><b>Nationality : </b> Thai </li>
 													<li><b>Religion : </b> Buddhist</li>
-												</ul>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div className="md:flex md:items-start md:-mx-4 mt-4">
-									<div className="mt-4 md:mx-4 md:mt-0">
-										<div className="flex items-start">
-                      <Dumbbell width={70} height={30} strokeWidth={1.5} />
-											<div className="flex flex-col">
-												<h3 className="text-xl font-semibold text-primary capitalize ">
-													Soft Skills
-												</h3>
-												<ul className="mt-1 text-gray-500">
-													<li>- <b>Adaptability</b></li>
-													<li>- <b>Problem Solving</b></li>
-													<li>- <b>Creative Thinking</b></li>
-													<li>- <b>Communication</b></li>
-													<li>- <b>Leadership</b></li>
-													<li>- <b>Resilience</b></li>
 												</ul>
 											</div>
 										</div>

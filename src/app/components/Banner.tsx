@@ -25,7 +25,7 @@ export default function Banner() {
 								</h1>
 
 								<h2 className="my-4 text-xl font-medium text-gray-600 ">
-									Started from Side Hustles to Multi-Million Success!
+									Started from Side Hustles to <b>Million $Dollar Success!</b>
 								</h2>
 
 								<button className="btn btn-primary lg:btn-xl btn-block lg:btn-wide ">
@@ -37,7 +37,7 @@ export default function Banner() {
 						<div className="flex items-end justify-center w-full mt-6 lg:mt-0 lg:w-1/2 relative">
 							<Image
 								className="w-full h-full lg:max-w-2xl z-10"
-								src="/banner-thumb-01.png"
+								src="/banner-thumb-02.png"
 								alt="my avatar thumb"
 								width={1920}
 								height={1080}
