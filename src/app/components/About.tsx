@@ -1,4 +1,4 @@
-import { ContactRound, Dumbbell, IdCard } from "lucide-react";
+import { ContactRound, IdCard } from "lucide-react";
 import Image from "next/image";
 import React from "react";
 

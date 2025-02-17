@@ -7,14 +7,13 @@ export default function Marquee() {
 				className="flex gap-5 text-4xl md:text-5xl font-bold text-primary uppercase marquee-content"
 			>
 				<span className="px-6">
-					"Success is built on failure, perseverance, and learning. Keep moving
-					forward!"
+					Success is built on failure, perseverance, and learning. Keep moving forward!
 				</span>
 				<span className="px-6">
-					"Every challenge is an opportunity to grow stronger."
+					Every challenge is an opportunity to grow stronger.
 				</span>
 				<span className="px-6">
-					"Innovate, adapt, and never stop dreaming!"
+					Innovate, adapt, and never stop dreaming!
 				</span>
 			</div>
 		</div>
