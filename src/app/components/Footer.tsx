@@ -7,7 +7,10 @@ export default function Footer() {
 		<>
 			<footer className="bg-primary">
 				<div className="container px-6 py-8 mx-auto">
-					<div className="flex flex-col items-center text-center"  data-aos="fade-up">
+					<div
+						className="flex flex-col items-center text-center"
+						data-aos="fade-up"
+					>
 						<a href="#">
 							<Image
 								className="w-auto h-16"
@@ -27,26 +30,21 @@ export default function Footer() {
 								<Link href={"#about"}>About Me</Link>
 							</li>
 							<li>
-								<Link href={"#education"}>Education</Link>
-							</li>
-							<li>
-								<Link href={"#transcript"}>Transcript</Link>
+								<Link href={"#myjourney"}>My EntrepreneurJourney</Link>
 							</li>
 							<li>
 								<Link href={"#skill"}>Skill</Link>
 							</li>
+
 							<li>
-								<Link href={"#myjourney"}>My Journey</Link>
+								<Link href={"#internship"}>Internship</Link>
 							</li>
 							<li>
-								<Link href={"#intership"}>Internship</Link>
-							</li>
-							<li>
-								<Link href={"#volunteen"}>Volunteen</Link>
+								<Link href={"#volunteer"}>Volunteer</Link>
 							</li>
 						</ul>
 
-						<div className="flex flex-wrap mt-4 flex-row lg:items-center lg:justify-center">
+						{/* <div className="flex flex-wrap mt-4 flex-row lg:items-center lg:justify-center">
 							<button className="flex items-center justify-center order-1 w-full px-2 py-2 mt-3 text-sm tracking-wide text-white capitalize transition-colors duration-300 transform border rounded-md sm:mx-2  sm:mt-0 sm:w-auto hover:bg-gray-50 focus:outline-none focus:ring  focus:ring-gray-300 focus:ring-opacity-40">
 								<svg
 									className="w-5 h-5 mx-1"
@@ -92,7 +90,7 @@ export default function Footer() {
 
 								<span className="mx-1">Contact 3</span>
 							</button>
-						</div>
+						</div> */}
 					</div>
 
 					<hr className="my-5 border-gray-200 " />

@@ -43,12 +43,6 @@ export default function Navbar() {
 								<li>
 									<Link href={"#myjourney"}>My EntrepreneurJourney</Link>
 								</li>
-								{/* <li>
-									<Link href={"#education"}>Education</Link>
-								</li>
-								<li>
-									<Link href={"#transcript"}>Transcript</Link>
-								</li> */}
 								<li>
 									<Link href={"#skill"}>Skill</Link>
 								</li>
