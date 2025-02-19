@@ -27,7 +27,7 @@ const EntrepreneurJourney = () => {
 						journey, but I’ve always wanted to carve my own path in business.
 						Instead of relying on their success, I explored multiple side
 						hustles—stock trading, content creation, and social media
-						management—which helped me earn enough to launch my first Ecommerce
+						management—which helped me earn enough to launch my first E-commerce
 						store.
 					</p>
 				</div>

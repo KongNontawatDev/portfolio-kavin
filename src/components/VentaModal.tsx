@@ -3,7 +3,6 @@ import React from "react";
 import { Modal } from "antd";
 import Image from "next/image";
 import Link from "next/link";
-import { Play } from "lucide-react";
 
 interface VentaModalProps {
   isOpen: boolean;
@@ -27,7 +26,7 @@ const VentaModal: React.FC<VentaModalProps> = ({ isOpen, onClose }) => {
     >
       <div className="p-4">
         <h1 className="text-center mb-4 text-2xl lg:text-3xl font-medium">
-          VENTA BLOCKS ECOMMERCE
+          VENTA BLOCKS E-COMMERCE
         </h1>
         <div className="w-full flex items-center justify-center">
           <Image

@@ -1,4 +1,4 @@
-import { Award, Package, Star, TrendingUp } from 'lucide-react'
+import {Package, Star} from 'lucide-react'
 import Image from 'next/image'
 import React from 'react'
 
@@ -74,7 +74,7 @@ export default function Shopify() {
                 data-aos="fade-up"
                 data-aos-delay="500"
               >
-                You've reached a <span className="font-semibold text-[#cea96a]">pivotal moment</span> in your entrepreneurship journey. This milestone represents dedication, persistence, and growth.
+                You&apos;ve reached a <span className="font-semibold text-[#cea96a]">pivotal moment</span> in your entrepreneurship journey. This milestone represents dedication, persistence, and growth.
               </p>
 
               <p 
@@ -108,10 +108,10 @@ export default function Shopify() {
                 data-aos-delay="800"
               >
                 <p className="font-bold text-xl text-[#cea96a]">
-                  Here's to 10x more
+                  Here&apos;s to 10x more
                 </p>
                 <p className="text-[#06213a]/60 mt-2">
-                  We'll be with you every step of the way
+                  We&apos;ll be with you every step of the way
                 </p>
                 <p className="italic text-[#06213a]/60 mt-1">
                   - Your friends at Shopify

@@ -26,7 +26,7 @@ const LuvModal: React.FC<LuvModalProps> = ({ isOpen, onClose }) => {
 		>
 			<div className="p-4">
 				<h1 className="text-center mb-4 text-2xl lg:text-3xl font-medium">
-					LUVJEWELY ECOMMERCE
+					LUVJEWELY E-COMMERCE
 				</h1>
 				<div className="w-full flex items-center justify-center">
 					<Image

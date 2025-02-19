@@ -4,7 +4,6 @@ import Image from "next/image";
 import LuvModal from "@/components/LuvModal";
 import TiktokModal from "@/components/TiktokModal";
 import VentaModal from "@/components/VentaModal";
-import ShopifyModal from "@/components/ShopifyModal";
 import React, { useState, useEffect } from "react";
 import AOS from 'aos';
 
