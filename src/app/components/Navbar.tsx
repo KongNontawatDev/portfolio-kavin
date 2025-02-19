@@ -9,7 +9,7 @@ export default function Navbar() {
 			<Container>
 				<div className="navbar py-2 lg:py-4">
 					<div className="navbar-start">
-						<div className="dropdown">
+						<div className="dropdown z-50">
 							<div
 								tabIndex={0}
 								role="button"
@@ -41,7 +41,7 @@ export default function Navbar() {
 									<Link href={"#about"}>About Me</Link>
 								</li>
 								<li>
-									<Link href={"#myjourney"}>My EntrepreneurJourney</Link>
+									<Link href={"#myjourney"}>My Entrepreneurial Journey</Link>
 								</li>
 								<li>
 									<Link href={"#skill"}>Skill</Link>
@@ -77,7 +77,7 @@ export default function Navbar() {
 								<Link href={"#about"}>About Me</Link>
 							</li>{" "}
 							<li>
-								<Link href={"#myjourney"}>My EntrepreneurJourney</Link>
+								<Link href={"#myjourney"}>My Entrepreneurial Journey</Link>
 							</li>
 							{/* <li>
 								<Link href={"#education"}>Education</Link>

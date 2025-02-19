@@ -48,7 +48,9 @@ const LuvModal: React.FC<LuvModalProps> = ({ isOpen, onClose }) => {
 							as it went viral in the{" "}
 							<span className="font-medium text-blue-600">United States</span>.
 							It was also only a few months away from{" "}
-							<span className="text-pink-500 font-medium">Valentine&apos;s day</span>
+							<span className="text-pink-500 font-medium">
+								Valentine&apos;s day
+							</span>
 							, so I thought that it was the perfect opportunity.
 						</p>
 					</div>
@@ -87,7 +89,7 @@ const LuvModal: React.FC<LuvModalProps> = ({ isOpen, onClose }) => {
 								$100,000+
 							</span>{" "}
 							in revenue from multiple channels:
-							<span className="block mt-2 flex flex-wrap gap-2">
+							<span className="block mt-2 lg:flex flex-wrap gap-2">
 								<span className="px-3 py-1 bg-gray-100 rounded-full text-sm font-medium hover:bg-gray-200 transition-colors duration-200">
 									Website
 								</span>
@@ -132,21 +134,6 @@ const LuvModal: React.FC<LuvModalProps> = ({ isOpen, onClose }) => {
 						(over $100,000 in revenue)
 					</h2>
 				</div>
-				{/* <div className="flex items-center flex-col lg:flex-row gap-5 my-10 lg:my-14">
-					<Image
-						src={"/Facebook Ads (2).png"}
-						alt=""
-						width={500}
-						height={500}
-						className="w-full lg:w-1/2"
-					/>
-					<h2 className="text-lg lg:text-2xl font-medium">
-          A Screenshot Of
-Facebook Ads
-Campaigns That
-I Managed
-					</h2>
-				</div> */}
 				<div className="flex items-center flex-col lg:flex-row gap-5 my-10 lg:my-14">
 					<Image
 						src={"/หน้า Tiktok.PNG"}
@@ -170,6 +157,21 @@ I Managed
 					<h2 className="text-lg lg:text-2xl font-medium">
 						Instagram Profile - 5,000+ Followers
 					</h2>
+				</div>
+				<div className="grid grid-cols-1 lg:grid-cols-2 gap-8 my-12">
+					<div className="relative group">
+						<div className="relative overflow-hidden rounded-xl shadow-lg">
+							<video
+								className="w-full aspect-[9/16] object-cover "
+								controls
+								autoPlay
+								poster="/video-thumbnail-1.jpg"
+							>
+								<source src="/luv-video.mp4" type="video/mp4" />
+								Your browser does not support the video tag.
+							</video>
+						</div>
+					</div>
 				</div>
 			</div>
 		</Modal>

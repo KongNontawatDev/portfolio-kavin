@@ -30,7 +30,7 @@ export default function Footer() {
 								<Link href={"#about"}>About Me</Link>
 							</li>
 							<li>
-								<Link href={"#myjourney"}>My EntrepreneurJourney</Link>
+								<Link href={"#myjourney"}>My Entrepreneurial Journey</Link>
 							</li>
 							<li>
 								<Link href={"#skill"}>Skill</Link>

@@ -18,7 +18,7 @@ const projects = [
   },
   {
     id: "luv",
-    title: "LuvJewelry Ecommerce",
+    title: "LuvJewelry E-commerce",
     description: "Crafting digital experiences for luxury jewelry",
     image: "/luv-tag.png",
     modal: LuvModal,
@@ -26,17 +26,17 @@ const projects = [
   {
     id: "tiktok",
     title: "Tiktok Affiliate",
-    description: "Mastering social commerce and affiliate marketing",
+    description: "Mastering social e-commerce and affiliate marketing",
     image: "/tiktok-tag.png",
     modal: TiktokModal,
   },
-  {
-    id: "shopify",
-    title: "Shopify Award",
-    description: "Recognition for e-commerce excellence",
-    image: "/shopify-award.png",
-    modal: ShopifyModal,
-  },
+  // {
+  //   id: "shopify",
+  //   title: "Shopify Award",
+  //   description: "Recognition for e-commerce excellence",
+  //   image: "/shopify-award.png",
+  //   modal: ShopifyModal,
+  // },
 ];
 
 export default function MyJourney() {
@@ -59,14 +59,14 @@ export default function MyJourney() {
           data-aos="fade-up"
         >
           <h1 className="text-3xl font-bold text-primary capitalize lg:text-5xl mb-4">
-            My Entrepreneurship Journey
+					My Entrepreneurial Journey
           </h1>
           <p className="text-gray-600 text-lg">
             A collection of milestones that shaped my path in digital commerce
           </p>
         </div>
 
-        <div className="grid grid-cols-1 gap-8 mt-2 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-8 mt-2 sm:grid-cols-2 lg:grid-cols-3">
           {projects.map(({ id, title, description, image, modal: ModalComponent }, index) => (
             <div
               key={id}

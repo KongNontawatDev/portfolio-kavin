@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import Internship from "./components/Internship";
 import Marquee from "./components/Marquee";
 import MyJourney from "./components/MyJourney";
+import Shopify from "./components/Shopify";
 import Skill from "./components/Skill";
 import Volunteer from "./components/Volunteer";
 
@@ -18,6 +19,7 @@ export default function Home() {
 			{/* <Education/> */}
 			{/* <Transcript/> */}
 			<MyJourney/>
+			<Shopify/>
 			<Skill/>
 			<Marquee/>
 			<Internship/>

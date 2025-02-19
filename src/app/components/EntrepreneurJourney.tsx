@@ -51,7 +51,7 @@ const EntrepreneurJourney = () => {
 							<div className="flex items-center gap-1">
 								<ShoppingCart size={30} />
 								<h2 className="text-4xl font-medium">
-									20,000 <span className="text-2xl font-medium">Orders</span>
+									20,000++ <span className="text-2xl font-medium">Orders</span>
 								</h2>
 							</div>
 
@@ -59,7 +59,7 @@ const EntrepreneurJourney = () => {
 							<div className="flex items-center gap-1">
 								<DollarSign size={30} />
 								<h2 className="text-4xl font-medium">
-									1,500,000{" "}
+									1,500,000+{" "}
 									<span className="text-2xl font-medium">Dollars</span>
 								</h2>
 							</div>
