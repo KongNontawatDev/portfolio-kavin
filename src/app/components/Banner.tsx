@@ -69,7 +69,7 @@ export default function Banner() {
 										target="_blank"
 										className="btn btn-secondary lg:btn-xl rounded-full hover:scale-105 transition-transform duration-300"
 									>
-										<ShoppingBag className="me-2" /> Luv Jewelry
+										<ShoppingBag className="me-2" /> LuvJewelry
 									</Link>
 								</div>
 							</div>
