@@ -1,111 +1,122 @@
 "use client";
+
+import Image from "next/image";
 import LuvModal from "@/components/LuvModal";
 import TiktokModal from "@/components/TiktokModal";
 import VentaModal from "@/components/VentaModal";
-import { ArrowRight } from "lucide-react";
-import React, { useState } from "react";
+import ShopifyModal from "@/components/ShopifyModal";
+import React, { useState, useEffect } from "react";
+import AOS from 'aos';
+
+const projects = [
+  {
+    id: "venta",
+    title: "Venta Blocks E-commerce",
+    description: "Building the future of e-commerce, block by block",
+    image: "/venta-tag.png",
+    modal: VentaModal,
+  },
+  {
+    id: "luv",
+    title: "LuvJewelry Ecommerce",
+    description: "Crafting digital experiences for luxury jewelry",
+    image: "/luv-tag.png",
+    modal: LuvModal,
+  },
+  {
+    id: "tiktok",
+    title: "Tiktok Affiliate",
+    description: "Mastering social commerce and affiliate marketing",
+    image: "/tiktok-tag.png",
+    modal: TiktokModal,
+  },
+  {
+    id: "shopify",
+    title: "Shopify Award",
+    description: "Recognition for e-commerce excellence",
+    image: "/shopify-award.png",
+    modal: ShopifyModal,
+  },
+];
 
 export default function MyJourney() {
-	const [ventaModalOpen, setVentaModalOpen] = useState(false);
-	const [luvModalOpen, setLuvModalOpen] = useState(false);
-	const [tiktokModalOpen, setTiktokModalOpen] = useState(false);
+  const [openModal, setOpenModal] = useState<string | null>(null);
+  const [hoveredProject, setHoveredProject] = useState<string | null>(null);
 
-	return (
-		<>
-			<section className="bg-[#F5F3EF]">
-				<div className="container px-6 py-10 mx-auto">
-					<h1 className="text-2xl font-semibold text-center text-primary capitalize lg:text-4xl">
-						My Entrepreneurship Journey
-					</h1>
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: true,
+      easing: 'ease-out',
+    });
+  }, []);
 
-					<div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 md:grid-cols-2 xl:grid-cols-3">
-						<div>
-							<div className="overflow-hidden bg-cover rounded-lg cursor-pointer h-96 group bg-[url('/venta.png')]">
-								<div
-									className="flex flex-col justify-center w-full h-full px-8 py-4 transition-opacity duration-700 opacity-0 backdrop-blur-sm bg-gray-800/60 group-hover:opacity-100"
-									onClick={() => setVentaModalOpen(true)}
-								>
-									<h2 className="mt-4 text-xl font-semibold text-white capitalize">
-										Venta Blocks E-commerce
-									</h2>
-									<p className="mt-2 flex items-center tracking-wider text-blue-400 uppercase">
-										View Detail <ArrowRight />
-									</p>
-								</div>
-							</div>
-							<h2 className="mt-4 text-xl font-semibold text-gray-800 capitalize">
-								Venta Blocks E-commerce
-							</h2>
-							<p
-								className="mt-2 text-xs flex items-center tracking-wider text-blue-500 uppercase cursor-pointer"
-								onClick={() => setVentaModalOpen(true)}
-							>
-								View Detail <ArrowRight size={14} />
-							</p>
-						</div>
+  return (
+    <section className="bg-gradient-to-b from-[#F5F3EF] to-white py-10 lg:py-15">
+      <div className="container px-6 mx-auto">
+        <div 
+          className="max-w-2xl mx-auto text-center mb-10"
+          data-aos="fade-up"
+        >
+          <h1 className="text-3xl font-bold text-primary capitalize lg:text-5xl mb-4">
+            My Entrepreneurship Journey
+          </h1>
+          <p className="text-gray-600 text-lg">
+            A collection of milestones that shaped my path in digital commerce
+          </p>
+        </div>
 
-						<div>
-							<div className="overflow-hidden bg-cover rounded-lg cursor-pointer h-96 group bg-[url('/luv-jewelry.png')]">
-								<div
-									className="flex flex-col justify-center w-full h-full px-8 py-4 transition-opacity duration-700 opacity-0 backdrop-blur-sm bg-gray-800/60 group-hover:opacity-100"
-									onClick={() => setLuvModalOpen(true)}
-								>
-									<h2 className="mt-4 text-xl font-semibold text-white capitalize">
-										Luv Jewelry Ecommerce
-									</h2>
-									<p className="mt-2 flex items-center tracking-wider text-blue-400 uppercase">
-										View Detail <ArrowRight />
-									</p>
-								</div>
-							</div>
-							<h2 className="mt-4 text-xl font-semibold text-gray-800 capitalize">
-								Luv Jewelry Ecommerce
-							</h2>
-							<p
-								className="mt-2 text-xs flex items-center tracking-wider text-blue-500 uppercase cursor-pointer"
-								onClick={() => setLuvModalOpen(true)}
-							>
-								View Detail <ArrowRight size={14} />
-							</p>
-						</div>
-
-						<div>
-							<div className="overflow-hidden bg-cover rounded-lg cursor-pointer h-96 group bg-[url('/tiktok.png')]">
-								<div
-									className="flex flex-col justify-center w-full h-full px-8 py-4 transition-opacity duration-700 opacity-0 backdrop-blur-sm bg-gray-800/60 group-hover:opacity-100"
-									onClick={() => setTiktokModalOpen(true)}
-								>
-									<h2 className="mt-4 text-xl font-semibold text-white capitalize">
-										Tiktok Affiliate
-									</h2>
-									<p className="mt-2 flex items-center tracking-wider text-blue-400 uppercase">
-										View Detail <ArrowRight />
-									</p>
-								</div>
-							</div>
-							<h2 className="mt-4 text-xl font-semibold text-gray-800 capitalize">
-								Tiktok Affiliate
-							</h2>
-							<p
-								className="mt-2 text-xs flex items-center tracking-wider text-blue-500 uppercase cursor-pointer"
-								onClick={() => setTiktokModalOpen(true)}
-							>
-								View Detail <ArrowRight size={14} />
-							</p>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<VentaModal
-				isOpen={ventaModalOpen}
-				onClose={() => setVentaModalOpen(false)}
-			/>
-			<LuvModal isOpen={luvModalOpen} onClose={() => setLuvModalOpen(false)} />
-			<TiktokModal
-				isOpen={tiktokModalOpen}
-				onClose={() => setTiktokModalOpen(false)}
-			/>
-		</>
-	);
+        <div className="grid grid-cols-1 gap-8 mt-2 sm:grid-cols-2 lg:grid-cols-4">
+          {projects.map(({ id, title, description, image, modal: ModalComponent }, index) => (
+            <div
+              key={id}
+              data-aos="fade-up"
+              data-aos-delay={index * 100}
+              className="group relative"
+              onMouseEnter={() => setHoveredProject(id)}
+              onMouseLeave={() => setHoveredProject(null)}
+            >
+              <div className="relative overflow-hidden rounded-2xl bg-white shadow transition-all duration-300 hover:shadow-xl">
+                <div className="relative h-64 w-full overflow-hidden">
+                  <Image
+                    src={image}
+                    alt={title}
+                    fill
+                    className={`object-cover transition-transform duration-500 ${
+                      hoveredProject === id ? 'scale-110' : 'scale-100'
+                    }`}
+                  />
+                  <div className={`absolute inset-0 bg-black/40 transition-opacity duration-300 ${
+                    hoveredProject === id ? 'opacity-100' : 'opacity-0'
+                  }`}>
+                    <div className="flex h-full items-center justify-center">
+                      <button
+                        onClick={() => setOpenModal(id)}
+                        className="transform rounded-full bg-white px-6 py-3 text-sm font-medium text-gray-900 transition-transform hover:scale-105"
+                      >
+                        View Project
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div className="p-6">
+                  <h2 className="text-xl font-semibold text-gray-800">
+                    {title}
+                  </h2>
+                  <p className="mt-2 text-gray-600">
+                    {description}
+                  </p>
+                  
+                </div>
+              </div>
+              <ModalComponent 
+                isOpen={openModal === id} 
+                onClose={() => setOpenModal(null)} 
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
 }

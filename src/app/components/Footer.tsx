@@ -7,7 +7,7 @@ export default function Footer() {
 		<>
 			<footer className="bg-primary">
 				<div className="container px-6 py-8 mx-auto">
-					<div className="flex flex-col items-center text-center">
+					<div className="flex flex-col items-center text-center"  data-aos="fade-up">
 						<a href="#">
 							<Image
 								className="w-auto h-16"

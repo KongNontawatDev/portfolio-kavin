@@ -36,21 +36,70 @@ const VentaModal: React.FC<VentaModalProps> = ({ isOpen, onClose }) => {
 						height={500}
 					/>
 				</div>
-				<div className="mt-4">
-					<p className="indent-10 lg:indent-16 text-lg">
-						I founded Venta Blocks in June 2024 to bring screen-free,
-						creativity-boosting games to kids. Drawing from past experiences in
-						paid ads, website creation, and product research, this venture
-						became my breakthrough—generating over $1,000,000 in revenue.
-					</p>
-				</div>
-				<div className="mt-4">
-					<p className="indent-10 lg:indent-16 text-lg">
-						Through this journey, I’ve collaborated with a diverse team,
-						including suppliers, marketers, customer support, UGC creators, and
-						strategists. While I’m still growing as a leader, my goal is to
-						**scale and eventually exit** this business in the coming years. 🚀
-					</p>
+				<div className="space-y-8 max-w-4xl mx-auto px-4 mt-4">
+					<div className="relative">
+						<p className="text-lg md:text-xl leading-relaxed">
+							I founded{" "}
+							<span className="font-bold text-2xl md:text-3xl bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent hover:from-purple-600 hover:to-blue-600 transition-all duration-300">
+								Venta Blocks
+							</span>{" "}
+							in <span className="font-semibold text-gray-700">June 2024</span>{" "}
+							to bring{" "}
+							<span className="italic font-medium">
+								screen-free, creativity-boosting games
+							</span>{" "}
+							to kids. Drawing from past experiences in{" "}
+							<span className="font-medium text-blue-600">paid ads</span>,{" "}
+							<span className="font-medium text-purple-600">
+								website creation
+							</span>
+							, and{" "}
+							<span className="font-medium text-indigo-600">
+								product research
+							</span>
+							, this venture became my breakthrough—generating over{" "}
+							<span className="font-bold text-2xl md:text-3xl bg-gradient-to-r from-green-500 to-emerald-500 bg-clip-text text-transparent">
+								$1,000,000
+							</span>{" "}
+							in revenue.
+						</p>
+					</div>
+
+					<div className="relative">
+						<p className="text-lg md:text-xl leading-relaxed">
+							Through this journey, I ve collaborated with a{" "}
+							<span className="font-medium">diverse team</span>, including{" "}
+							<span className="inline-flex gap-2 items-center">
+								<span className="text-blue-500 hover:text-blue-600 transition-colors duration-200">
+									suppliers
+								</span>{" "}
+								•
+								<span className="text-purple-500 hover:text-purple-600 transition-colors duration-200">
+									marketers
+								</span>{" "}
+								•
+								<span className="text-indigo-500 hover:text-indigo-600 transition-colors duration-200">
+									support
+								</span>{" "}
+								•
+								<span className="text-pink-500 hover:text-pink-600 transition-colors duration-200">
+									creators
+								</span>{" "}
+								•
+								<span className="text-violet-500 hover:text-violet-600 transition-colors duration-200">
+									strategists
+								</span>
+							</span>
+							. While I m still growing as a{" "}
+							<span className="font-semibold text-gray-700">leader</span>, my
+							goal is to{" "}
+							<span className="font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+								scale and eventually exit
+							</span>{" "}
+							this business in the coming years.{" "}
+							<span className="inline-block animate-bounce">🚀</span>
+						</p>
+					</div>
 				</div>
 				<div className="flex items-center flex-col lg:flex-row gap-5 my-10 lg:my-14">
 					<Image
@@ -79,7 +128,7 @@ const VentaModal: React.FC<VentaModalProps> = ({ isOpen, onClose }) => {
 						Analytics From The Past 90 Days Of Running This Brand
 					</h2>
 				</div>
-				<div className="flex items-center flex-col lg:flex-row gap-5 my-10 lg:my-14">
+				{/* <div className="flex items-center flex-col lg:flex-row gap-5 my-10 lg:my-14">
 					<Image
 						src={"/Facebook Ads.png"}
 						alt=""
@@ -90,7 +139,7 @@ const VentaModal: React.FC<VentaModalProps> = ({ isOpen, onClose }) => {
 					<h2 className="text-lg lg:text-2xl font-medium">
 						A Screenshot Of The Facebook Ads Campaigns That I Am Managing
 					</h2>
-				</div>
+				</div> */}
 				<div className="flex items-center flex-col lg:flex-row gap-5 my-10 lg:my-14">
 					<Image
 						src={"/Facebook Ads (1).png"}

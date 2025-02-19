@@ -5,7 +5,7 @@ import Container from "@/components/common/Container";
 
 export default function Navbar() {
 	return (
-		<div className="w-full flex justify-center items-center">
+		<div className="w-full flex justify-center items-center" data-aos="fade-down">
 			<Container>
 				<div className="navbar py-2 lg:py-4">
 					<div className="navbar-start">
@@ -41,22 +41,23 @@ export default function Navbar() {
 									<Link href={"#about"}>About Me</Link>
 								</li>
 								<li>
+									<Link href={"#myjourney"}>My EntrepreneurJourney</Link>
+								</li>
+								{/* <li>
 									<Link href={"#education"}>Education</Link>
 								</li>
 								<li>
 									<Link href={"#transcript"}>Transcript</Link>
-								</li>
+								</li> */}
 								<li>
 									<Link href={"#skill"}>Skill</Link>
 								</li>
+								
 								<li>
-									<Link href={"#myjourney"}>My Journey</Link>
+									<Link href={"#internship"}>Internship</Link>
 								</li>
 								<li>
-									<Link href={"#intership"}>Internship</Link>
-								</li>
-								<li>
-									<Link href={"#volunteen"}>Volunteer</Link>
+									<Link href={"#volunteer"}>Volunteer</Link>
 								</li>
 							</ul>
 						</div>
@@ -80,24 +81,24 @@ export default function Navbar() {
 							</li>
 							<li>
 								<Link href={"#about"}>About Me</Link>
-							</li>
+							</li>{" "}
 							<li>
+								<Link href={"#myjourney"}>My EntrepreneurJourney</Link>
+							</li>
+							{/* <li>
 								<Link href={"#education"}>Education</Link>
 							</li>
 							<li>
 								<Link href={"#transcript"}>Transcript</Link>
-							</li>
+							</li> */}
 							<li>
 								<Link href={"#skill"}>Skill</Link>
 							</li>
 							<li>
-								<Link href={"#myjourney"}>My Journey</Link>
+								<Link href={"#internship"}>Internship</Link>
 							</li>
 							<li>
-								<Link href={"#intership"}>Internship</Link>
-							</li>
-							<li>
-								<Link href={"#volunteen"}>Volunteer</Link>
+								<Link href={"#volunteer"}>Volunteer</Link>
 							</li>
 						</ul>
 					</div>

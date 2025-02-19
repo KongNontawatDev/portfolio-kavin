@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState} from "react";
 import Image from "next/image";
 import Container from "@/components/common/Container";
 
@@ -14,7 +14,7 @@ const projects = [
 	{
 		title: "Decoration for the CNY Garden Party",
 		description:
-			"I had the opportunity to help create an upcycled art piece as a decoration for the CNY Garden Party —an annual event held at the Istana by the Prime Minister and People’s Association to celebrate Chinese New Year. The project was part of the TP sustainability club event. It was a good experience, showcasing creativity making a piece of decoration for a prestigious event, using sustainable materials.  ",
+			"I had the opportunity to help create an upcycled art piece as a decoration for the CNY Garden Party —an annual event held at the Istana by the Prime Minister and People's Association to celebrate Chinese New Year. The project was part of the TP sustainability club event. It was a good experience, showcasing creativity making a piece of decoration for a prestigious event, using sustainable materials.",
 		image: "/volunteer2.png",
 	},
 ];
@@ -22,12 +22,13 @@ const projects = [
 export default function Volunteer() {
 	const [current, setCurrent] = useState(0);
 
+
 	const nextSlide = () => setCurrent((prev) => (prev + 1) % projects.length);
 	const prevSlide = () =>
 		setCurrent((prev) => (prev - 1 + projects.length) % projects.length);
 
 	return (
-		<section className="bg-white flex items-center justify-center py-8">
+		<section className="bg-white flex items-center justify-center py-8" id="volunteer">
 			<Container className="text-center">
 				<div className="flex flex-col lg:flex-row items-center justify-center">
 					<Image
@@ -35,26 +36,48 @@ export default function Volunteer() {
 						width={600}
 						height={300}
 						alt={projects[current].title}
-						className="order-2 lg:order-1 object-cover w-full max-w-2xl rounded-lg"
+						className="order-2 lg:order-1 object-cover w-full max-w-2xl rounded-lg transition-all duration-500"
+						data-aos="fade-right"
+						data-aos-delay="200"
 					/>
 
-					<div className="order-1 lg:order-2 mb-8 lg:mt-0 lg:px-10">
-						<h1 className="text-3xl mb-3 font-semibold text-secondary">
+					<div 
+						className="order-1 lg:order-2 mb-8 lg:mt-0 lg:px-10"
+						data-aos="fade-left"
+						data-aos-delay="400"
+					>
+						<h1 
+							className="text-3xl mb-3 font-semibold text-secondary"
+							data-aos="fade-down"
+							data-aos-delay="200"
+						>
 							Volunteer
 						</h1>
-						<h2 className="text-2xl font-semibold text-gray-800 ">
+						<h2 
+							className="text-2xl font-semibold text-gray-800"
+							data-aos="fade-up"
+							data-aos-delay="400"
+						>
 							{projects[current].title}
 						</h2>
-						<p className="mt-4 text-gray-500 ">
+						<p 
+							className="mt-4 text-gray-500"
+							data-aos="fade-up"
+							data-aos-delay="600"
+						>
 							{projects[current].description}
 						</p>
 					</div>
 				</div>
 
-				<div className="flex items-center justify-center mt-10 space-x-4">
+				<div 
+					className="flex items-center justify-center mt-10 space-x-4"
+					data-aos="fade-up"
+					data-aos-delay="800"
+				>
 					<button
 						onClick={prevSlide}
-						className="p-2 text-gray-800  border rounded-full  hover:bg-gray-100 "
+						className="p-2 text-gray-800 border rounded-full hover:bg-gray-100 transition-all duration-300"
 					>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -73,7 +96,7 @@ export default function Volunteer() {
 					</button>
 					<button
 						onClick={nextSlide}
-						className="p-2 text-gray-800  border rounded-full  hover:bg-gray-100 "
+						className="p-2 text-gray-800 border rounded-full hover:bg-gray-100 transition-all duration-300"
 					>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
