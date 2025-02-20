@@ -12,7 +12,7 @@ export default function Shopify() {
         data-aos-duration="1000"
       >
         <h1 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r  bg-clip-text text-[#cea96a]">
-          Milestone Achievement
+          Shopify Milestone Achievement
         </h1>
       </div>
 

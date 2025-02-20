@@ -158,19 +158,23 @@ const LuvModal: React.FC<LuvModalProps> = ({ isOpen, onClose }) => {
 						Instagram Profile - 5,000+ Followers
 					</h2>
 				</div>
-				<div className="grid grid-cols-1 lg:grid-cols-2 gap-8 my-12">
-					<div className="relative group">
-						<div className="relative overflow-hidden rounded-xl shadow-lg">
+				<div className="grid grid-cols-1 my-10">
+					{/* Factory Video */}
+					<div className="relative group flex items-center flex-col lg:flex-row gap-5">
+						<div className="relative w-full lg:w-1/2 overflow-hidden rounded shadow-lg">
 							<video
 								className="w-full aspect-[9/16] object-cover "
 								controls
 								autoPlay
-								poster="/video-thumbnail-1.jpg"
+								poster="/video-thumbnail-2.jpg"
 							>
 								<source src="/luv-video.mp4" type="video/mp4" />
 								Your browser does not support the video tag.
 							</video>
 						</div>
+						<h2 className="text-lg lg:text-2xl font-medium">
+						LuvJewelry UGC Video Ad Example (Product Showcase)
+						</h2>
 					</div>
 				</div>
 			</div>
