@@ -165,7 +165,7 @@ const VentaModal: React.FC<VentaModalProps> = ({ isOpen, onClose }) => {
 						</div>
 						<h2 className="text-lg lg:text-2xl font-medium">
             
-            Venta Blocks - The Supplier's Factory that I Work with in China
+            Venta Blocks - The Supplier&apos;s Factory that I Work with in China
 						</h2>
 					</div>
 				</div>
