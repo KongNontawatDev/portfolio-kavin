@@ -92,7 +92,7 @@ export default function Banner() {
 
 							{/* Floating Shopify Tag */}
 							<Image
-								className="absolute top-5 left-5 lg:top-10 lg:left-10 w-48 h-24  lg:w-64 lg:h-32 object-contain animate-bounce z-20"
+								className="absolute top-5 left-0 lg:top-10 w-48 h-24  lg:w-72 lg:h-36 object-contain animate-bounce z-20"
 								src="/shopify-tag.png"
 								alt="Shopify Tag"
 								width={1280}
